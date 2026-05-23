@@ -21,7 +21,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="⊕ AutoTapping"
+            android:text="⊕ auto-tapping-android"
             android:textColor="#FFFFFFFF"
             android:textSize="16sp"
             android:textStyle="bold"

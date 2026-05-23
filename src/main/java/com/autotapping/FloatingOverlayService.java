@@ -113,7 +113,7 @@ public class FloatingOverlayService extends Service {
     private void startForegroundWithNotification() {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
             NotificationChannel channel = new NotificationChannel(
-                    CHANNEL_ID, "AutoTapping Overlay", NotificationManager.IMPORTANCE_LOW);
+                    CHANNEL_ID, "auto-tapping-android Overlay", NotificationManager.IMPORTANCE_LOW);
             channel.setDescription("Оверлей прицела и настроек");
             ((NotificationManager) getSystemService(NOTIFICATION_SERVICE))
                     .createNotificationChannel(channel);
@@ -126,7 +126,7 @@ public class FloatingOverlayService extends Service {
         PendingIntent stopPending = PendingIntent.getService(this, 0, stopIntent, flags);
 
         Notification notification = new Notification.Builder(this, CHANNEL_ID)
-                .setContentTitle("AutoTapping активен")
+                .setContentTitle("auto-tapping-android активен")
                 .setContentText("Перетащите прицел на нужную точку")
                 .setSmallIcon(android.R.drawable.ic_menu_compass)
                 .addAction(android.R.drawable.ic_menu_close_clear_cancel, "Остановить", stopPending)

@@ -1,4 +1,4 @@
-# AutoTapping
+# auto-tapping-android
 
 An Android app that performs automated screen taps at a configurable rate using the Accessibility API.
 
@@ -19,7 +19,7 @@ An Android app that performs automated screen taps at a configurable rate using 
 ## Setup
 
 1. Install the APK
-2. Open the app and tap **Enable Accessibility** → enable *AutoTapping* in system settings
+2. Open the app and tap **Enable Accessibility** → enable *auto-tapping-android* in system settings
 3. Tap **Launch Overlay** → grant *Draw over other apps* permission if prompted
 4. Drag the crosshair to the desired tap location
 5. Tap the crosshair to open the settings menu, set speed, then tap **START**
@@ -30,7 +30,7 @@ An Android app that performs automated screen taps at a configurable rate using 
 mvn package
 ```
 
-Produces `target/auto-tapping-*.ap_`.
+Produces `target/auto-tapping-android-*.ap_`.
 
 ## Permissions
 
