@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="72dp"
+    android:layout_height="72dp">
+
+    <!-- Crosshair icon — занимает весь контейнер, перетаскивается -->
+    <ImageView
+        android:id="@+id/iv_crosshair"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_gravity="center"
+        android:src="@drawable/ic_crosshair"
+        android:contentDescription="Tap target crosshair" />
+
+    <!-- Countdown overlay — shown when auto-tap is paused -->
+    <TextView
+        android:id="@+id/tv_countdown"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFFFF"
+        android:shadowColor="#CC000000"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="6"
+        android:visibility="gone" />
+
+    <!-- Кнопка меню — маленький кружок в правом-нижнем углу -->
+    <TextView
+        android:id="@+id/btn_open_menu"
+        android:layout_width="22dp"
+        android:layout_height="22dp"
+        android:layout_gravity="bottom|end"
+        android:gravity="center"
+        android:text="⚙"
+        android:textSize="12sp"
+        android:textColor="#FFFFFFFF"
+        android:background="@drawable/bg_menu_btn" />
+
+</FrameLayout>

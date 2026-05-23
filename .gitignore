@@ -1,0 +1,26 @@
+# Build output
+target/
+*.ap_
+*.apk
+*.aab
+
+# Maven
+.mvn/
+!.mvn/wrapper/maven-wrapper.jar
+
+# IDE
+.idea/
+*.iml
+*.iws
+*.ipr
+.classpath
+.project
+.settings/
+*.code-workspace
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Local config
+local.properties

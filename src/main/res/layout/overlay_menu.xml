@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="380dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/bg_glass_card"
+    android:padding="20dp"
+    android:elevation="12dp">
+
+    <!-- Header row (drag handle) -->
+    <LinearLayout
+        android:id="@+id/menu_drag_handle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:padding="4dp"
+        android:layout_marginBottom="16dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="⊕ AutoTapping"
+            android:textColor="#FFFFFFFF"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:letterSpacing="0.04" />
+
+        <TextView
+            android:id="@+id/btn_close_menu"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:gravity="center"
+            android:text="✕"
+            android:textColor="#AAB0C0"
+            android:textSize="14sp"
+            android:background="@drawable/bg_menu_btn" />
+    </LinearLayout>
+
+    <!-- Divider -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#22FFFFFF"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Target coords label -->
+    <TextView
+        android:id="@+id/tv_coords"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Target: X 0  Y 0"
+        android:textColor="#88B0D0"
+        android:textSize="12sp"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Speed label row -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="6dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Speed"
+            android:textColor="#CCFFFFFF"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/tv_speed_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2.0 tap/sec"
+            android:textColor="#FF7B9FFF"
+            android:textSize="13sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <!-- Speed SeekBar: progress 0-299 → 1-300 taps/sec -->
+    <SeekBar
+        android:id="@+id/seekbar_speed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="999"
+        android:progress="1"
+        android:progressTint="#7B9FFF"
+        android:thumbTint="#A78BFA"
+        android:layout_marginBottom="20dp" />
+
+    <!-- Start / Stop row -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/btn_start"
+            android:layout_width="0dp"
+            android:layout_height="44dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="▶  Start"
+            android:textColor="#FFFFFFFF"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:background="@drawable/bg_btn_accent"
+            android:layout_marginEnd="8dp" />
+
+        <TextView
+            android:id="@+id/btn_stop"
+            android:layout_width="0dp"
+            android:layout_height="44dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="■  Stop"
+            android:textColor="#AACCD8FF"
+            android:textSize="14sp"
+            android:background="@drawable/bg_btn_stop" />
+    </LinearLayout>
+
+    <!-- Status indicator -->
+    <TextView
+        android:id="@+id/tv_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="● Stopped"
+        android:textColor="#AA607080"
+        android:textSize="11sp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="12dp" />
+
+    <!-- Divider -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#22FFFFFF"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="12dp" />
+
+    <!-- Close crosshair button -->
+    <TextView
+        android:id="@+id/btn_close_crosshair"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:text="✕  Close Crosshair"
+        android:textColor="#FFFF6B6B"
+        android:textSize="13sp"
+        android:textStyle="bold"
+        android:background="@drawable/bg_btn_stop" />
+
+</LinearLayout>

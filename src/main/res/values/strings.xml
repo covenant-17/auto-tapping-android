@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">AutoTapping</string>
+    <string name="accessibility_service_label">AutoTapping Service</string>
+    <string name="notification_channel_name">AutoTapping Overlay</string>
+    <string name="overlay_hint">Drag the crosshair to the target point</string>
+</resources>
