@@ -10,7 +10,7 @@
     <version>1.0.0-SNAPSHOT</version>
     <packaging>apk</packaging>
 
-    <name>AutoTapping</name>
+    <name>auto-tapping</name>
     <description>Android auto-tapper using AccessibilityService</description>
 
     <properties>
