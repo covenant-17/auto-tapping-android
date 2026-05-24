@@ -36,7 +36,7 @@ public class TapAccessibilityService extends AccessibilityService {
 
     @Override
     public void onAccessibilityEvent(AccessibilityEvent event) {
-        // не используется в MVP
+        // not used in MVP
     }
 
     @Override
@@ -64,7 +64,7 @@ public class TapAccessibilityService extends AccessibilityService {
     }
 
     public void updateTarget(float x, float y) {
-        // координаты обновляются через перезапуск с текущим интервалом
+        // update coordinates by restarting with current interval
         if (isTapping && lastIntervalMs > 0) {
             startTapping(x, y, lastIntervalMs);
         }
@@ -93,7 +93,7 @@ public class TapAccessibilityService extends AccessibilityService {
         path.moveTo(x, y);
 
         GestureDescription.StrokeDescription stroke =
-                new GestureDescription.StrokeDescription(path, 0, 1); // 1мс — минимальная длительность тапа
+                new GestureDescription.StrokeDescription(path, 0, 1); // 1ms — minimum tap duration
 
         GestureDescription gesture = new GestureDescription.Builder()
                 .addStroke(stroke)

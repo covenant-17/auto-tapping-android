@@ -3,7 +3,7 @@
     android:layout_width="72dp"
     android:layout_height="72dp">
 
-    <!-- Crosshair icon — занимает весь контейнер, перетаскивается -->
+    <!-- Crosshair icon — fills the container, draggable -->
     <ImageView
         android:id="@+id/iv_crosshair"
         android:layout_width="64dp"
@@ -28,7 +28,7 @@
         android:shadowRadius="6"
         android:visibility="gone" />
 
-    <!-- Кнопка меню — маленький кружок в правом-нижнем углу -->
+    <!-- Menu button — small circle in the bottom-right corner -->
     <TextView
         android:id="@+id/btn_open_menu"
         android:layout_width="22dp"
